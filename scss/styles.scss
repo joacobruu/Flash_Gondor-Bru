@@ -1,7 +1,143 @@
-body {
-  background-color: black;
+@import "_colores";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: $white;
+  box-sizing: border-box;
 }
 
-div {
-  background-color: red;
+body {
+  background-color: $background;
+  box-sizing: border-box;
+}
+
+.logo--img {
+  width: 100px;
+  margin-top: .5rem;
+}
+
+.main--cover {
+  background-image: url(../img/fortniteCover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-width: 320px;
+  height: 300px;
+  margin-bottom: 150px;
+
+  .cover_container {
+    position: relative;
+    top: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cover--img {
+      width: 160px;
+    }
+    
+    .cover--info {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-size: 1.8rem;
+        font-weight: 900;
+        padding: 1rem 1rem;
+      }
+    }
+  }
+}
+
+/*/////Colecciones y juegos /////*/
+
+.main--colection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  h2 {
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    text-decoration: underline;
+  }
+
+  .colection_container {
+    display: flex;
+    width: 100%;
+    height: 316px;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+
+    .colection--item {
+      position: relative;
+      scroll-snap-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $violeta;
+      border-radius: 10px;
+      width: 220px;
+      height: 250px;
+      min-width: 220px;
+      max-width: 300px;
+      margin: 0 15px;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -17px;
+        width: 80px;
+        height: 35px;
+        border-radius: 8px;
+        background-color: $offWhite;
+        color: $black;
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+
+      .item--img img {
+        width: 200px;
+      }
+
+      p {
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 700;
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
+/*/////Footer/////*/
+
+#footer {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.socialMedia-item {
+  padding-left: 10px;
+}
+
+.footer__info {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.info-item {
+  font-size: 1.6rem;
 }
