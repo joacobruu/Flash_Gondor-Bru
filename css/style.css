@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(20, 20, 20, 1);
+  box-sizing: border-box;
+}
+
+/*///// Header /////*/
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  background-color: rgba(20, 20, 20, 1);
+}
+
+.logo--img {
+  width: 100px;
+  margin-top: .5rem;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 5px;
+  font-size: 1.6rem;
+}
+
+/*///// Cover /////*/
+
+.main--cover {
+  background-image: url(../img/fortniteCover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-width: 320px;
+  height: 300px;
+  margin-bottom: 150px;
+}
+
+.cover_container {
+  position: relative;
+  top: 235px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover--img {
+  width: 160px;
+}
+
+.cover--info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover--info p {
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 1rem 1rem;
+}
+
+/*/////Colecciones y juegos /////*/
+
+.main--colection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.colection_container {
+  display: flex;
+  width: 100%;
+  height: 316px;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+}
+
+.colection_container-noFlow {
+  display: flex;
+  width: 100%;
+  height: 316px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main--colection h2 {
+  text-align: left;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.colection--item {
+  position: relative;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8f00ff;
+  border-radius: 10px;
+  width: 220px;
+  height: 250px;
+  min-width: 220px;
+  max-width: 300px;
+  margin: 0 15px;
+}
+
+.colection--item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -17px;
+  width: 80px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #F9F9F9;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.colection--item p {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.item--img img {
+  width: 200px;
+}
+
+.colection--img img {
+  width: 121px;
+}
+
+/*/////Contacto/////*/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+}
+
+.contact__container h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact__container-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input {
+  background-color: transparent;
+  border-bottom: 2px solid #ffffff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0 20px;
+}
+
+.input::placeholder {
+  color: #ffffff;
+}
+
+.boton {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+.textarea {
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  outline: none;
+  padding: 20px;
+  background: transparent;
+}
+
+.textarea::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/*///// Nosotros /////*/
+
+#aboutUs {
+  margin-top: 80px;
+}
+
+#aboutUs h2 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.aboutUs-text {
+  min-height: 320px;
+}
+
+.aboutUs-text p {
+  font-size: 1.6rem;
+  padding: 5px;
+  margin: 0 40px;
+}
+
+/*/////Footer/////*/
+
+#footer {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.socialMedia-item {
+  padding-left: 10px;
+}
+
+.footer__info {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.info-item {
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 530px) {
+  
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main--cover {
+    background-position-y: -10px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+
+  .index__colectionContainer {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  
+  .juegos__colectionContainer {
+    justify-content: center;
+  }
+}
