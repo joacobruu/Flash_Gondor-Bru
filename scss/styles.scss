@@ -24,38 +24,8 @@ body {
   font-size: 1.6rem;
 }
 
-.main--cover {
-  background-image: url(../img/fortniteCover.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  min-width: 320px;
-  height: 300px;
-  margin-bottom: 150px;
-
-  .cover_container {
-    position: relative;
-    top: 235px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .cover--img {
-      width: 160px;
-    }
-    
-    .cover--info {
-      display: flex;
-      justify-content: space-between;
-
-      p {
-        font-size: 1.8rem;
-        font-weight: 900;
-        padding: 1rem 1rem;
-      }
-    }
-  }
+#carouselExampleCaptions {
+  margin-bottom: 80px;
 }
 
 /*/////Colecciones y juegos /////*/
@@ -293,6 +263,13 @@ body {
   }
   
   .juegos__colectionContainer {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  
+  .colection_container {
     justify-content: center;
   }
 }
