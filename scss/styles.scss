@@ -105,9 +105,13 @@ body {
         font-weight: 700;
       }
 
-      .item--img img {
-        width: 200px;
-      }
+      .item--img {
+        height: 100px;
+        @include flexCenter;
+        img {
+          width: 200px;
+        }
+      } 
 
       .colection--img img {
         width: 121px;
@@ -260,12 +264,33 @@ body {
 
 @media only screen and (min-width: 750px) {
 
+  .main--cover {
+    height: 400px;
+
+    .cover_container {
+      top: 334px;
+    }
+  }
+
   .index__colectionContainer {
     justify-content: center;
   }
 }
 
 @media only screen and (min-width: 1000px) {
+
+  .main--cover {
+    height: 400px;
+    background-position-y: -50px;
+  }
+
+  .main--colection {
+    overflow-x: hidden;
+
+    .colection_container {
+      overflow-x: hidden;
+    }
+  }
   
   .juegos__colectionContainer {
     justify-content: center;
