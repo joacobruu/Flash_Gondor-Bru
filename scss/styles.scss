@@ -288,12 +288,14 @@ body {
     .aboutUs__container {
       margin-bottom: 230px;
       margin-right: 80px;
+      width: 50%;
     }
 
     .grid {
+      width: 50%;
       display: grid;
-      grid-template-columns: repeat(2, 500px);
-      grid-template-rows: repeat(3, 400px);
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 300px);
       gap: 10px;
       grid-template-areas: "img1 img1"
                            "img2 img3"
