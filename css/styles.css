@@ -193,7 +193,11 @@ body {
     .main--cover .cover_container {
       top: 334px; }
   .index__colectionContainer {
-    justify-content: center; } }
+    justify-content: center; }
+  .grid {
+    display: none; }
+    .grid img {
+      display: none; } }
 
 @media only screen and (min-width: 1000px) {
   .main--cover {
@@ -231,6 +235,8 @@ body {
       grid-template-rows: repeat(3, 300px);
       gap: 10px;
       grid-template-areas: "img1 img1" "img2 img3" "img4 img4"; }
+      #aboutUs .grid img {
+        display: block; }
       #aboutUs .grid .img1 {
         background-color: red;
         grid-area: img1; }

@@ -249,6 +249,10 @@ body {
 
   .grid {
     display: none;
+
+    img {
+      display: none;
+    }
   }
 }
 
@@ -304,6 +308,10 @@ body {
       grid-template-areas: "img1 img1"
                            "img2 img3"
                            "img4 img4";
+
+      img {
+        display: block;
+      }
       
       .img1{
         background-color: red;
