@@ -271,6 +271,7 @@ body {
 
     .colection_container {
       overflow-x: hidden;
+      height: 400px;
       
       .colection--item {
         @include flexColumn;
@@ -279,6 +280,12 @@ body {
         width: 270px;
         height: 273px;
         margin: 0 15px;
+        cursor: pointer;
+      }
+
+      .colection--item:hover {
+        transform: scale(1.1);
+        transition: 1s;
       }
     }
   }
