@@ -3,23 +3,23 @@ Proyecto Coderhouse Frontend
 
 Keywords aplicadas:
 
-Flash
-Gondor
-Figuritas
-Infantil
-Albumes
-Colecciones
-Figuritas coleccionables
-Juegos de mesa
-Juegos
-Fortnite
-Pokemon
-Dragon ball
-Dragon
-Cartas coleccionables
-Album de figuritas
-niños
-Grafica
+-Flash
+-Gondor
+-Figuritas
+-Infantil
+-Albumes
+-Colecciones
+-Figuritas coleccionables
+-Juegos de mesa
+-Juegos
+-Fortnite
+-Pokemon
+-Dragon ball
+-Dragon
+-Cartas coleccionables
+-Album de figuritas
+-niños
+-Grafica
 
 Cambie el titulo de cada una de las paginas y agregue una descripcion a cada una acorde a su funcion.
 
