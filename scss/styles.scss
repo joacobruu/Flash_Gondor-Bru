@@ -196,6 +196,17 @@ body {
   }
 }
 
+.aboutUs__imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
 /*/////Footer/////*/
 
 #footer {
@@ -246,14 +257,6 @@ body {
   .index__colectionContainer {
     justify-content: center;
   }
-
-  .grid {
-    display: none;
-
-    img {
-      display: none;
-    }
-  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -299,7 +302,7 @@ body {
       width: 50%;
     }
 
-    .grid {
+    .aboutUs__imagenes {
       width: 50%;
       display: grid;
       grid-template-columns: repeat(2, 50%);
@@ -308,10 +311,6 @@ body {
       grid-template-areas: "img1 img1"
                            "img2 img3"
                            "img4 img4";
-
-      img {
-        display: block;
-      }
       
       .img1{
         background-color: red;

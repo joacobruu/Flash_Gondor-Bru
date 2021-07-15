@@ -159,6 +159,14 @@ body {
     padding: 5px;
     margin: 0 40px; }
 
+.aboutUs__imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 20px; }
+  .aboutUs__imagenes img {
+    width: 100%; }
+
 /*/////Footer/////*/
 #footer {
   display: flex;
@@ -193,11 +201,7 @@ body {
     .main--cover .cover_container {
       top: 334px; }
   .index__colectionContainer {
-    justify-content: center; }
-  .grid {
-    display: none; }
-    .grid img {
-      display: none; } }
+    justify-content: center; } }
 
 @media only screen and (min-width: 1000px) {
   .main--cover {
@@ -228,44 +232,42 @@ body {
       margin-bottom: 230px;
       margin-right: 80px;
       width: 50%; }
-    #aboutUs .grid {
+    #aboutUs .aboutUs__imagenes {
       width: 50%;
       display: grid;
       grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(3, 300px);
       gap: 10px;
       grid-template-areas: "img1 img1" "img2 img3" "img4 img4"; }
-      #aboutUs .grid img {
-        display: block; }
-      #aboutUs .grid .img1 {
+      #aboutUs .aboutUs__imagenes .img1 {
         background-color: red;
         grid-area: img1; }
-        #aboutUs .grid .img1 img {
+        #aboutUs .aboutUs__imagenes .img1 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      #aboutUs .grid .img2 {
+      #aboutUs .aboutUs__imagenes .img2 {
         background-color: red;
         grid-area: img2; }
-        #aboutUs .grid .img2 img {
+        #aboutUs .aboutUs__imagenes .img2 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      #aboutUs .grid .img3 {
+      #aboutUs .aboutUs__imagenes .img3 {
         background-color: red;
         grid-area: img3; }
-        #aboutUs .grid .img3 img {
+        #aboutUs .aboutUs__imagenes .img3 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      #aboutUs .grid .img4 {
+      #aboutUs .aboutUs__imagenes .img4 {
         background-color: red;
         grid-area: img4; }
-        #aboutUs .grid .img4 img {
+        #aboutUs .aboutUs__imagenes .img4 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      #aboutUs .grid .img5 {
+      #aboutUs .aboutUs__imagenes .img5 {
         background-color: red;
         grid-area: img5; }
   .socialMedia-item img {
