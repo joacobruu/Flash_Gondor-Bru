@@ -274,10 +274,7 @@ body {
           object-fit: cover; }
       #aboutUs .aboutUs__imagenes .img5 {
         background-color: red;
-        grid-area: img5; }
-  .socialMedia-item img {
-    width: 30px;
-    height: 30px; } }
+        grid-area: img5; } }
 
 @media only screen and (min-width: 1250px) {
   .colection_container {
