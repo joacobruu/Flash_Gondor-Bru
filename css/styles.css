@@ -2,14 +2,21 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, 'Sigmar One', cursive;
   font-size: 10px;
-  color: #EFEFEF;
+  color: #FBF5F3;
   box-sizing: border-box; }
 
 body {
-  background-color: #0A1931;
-  box-sizing: border-box; }
+  background-color: #000022; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  background-color: #000022; }
+  .navbar .navbar-nav .nav-link {
+    color: #FBF5F3; }
 
 .logo--img {
   width: 100px;
@@ -18,21 +25,43 @@ body {
 .nav-link {
   font-size: 1.6rem; }
 
-#carouselExampleCaptions {
-  margin-bottom: 80px; }
+.carousel__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46px; }
+  .carousel__container #carouselExampleCaptions {
+    width: 90%; }
+
+.wave {
+  position: absolute;
+  top: -190px;
+  height: 305vh;
+  width: 100%;
+  z-index: -1; }
+
+.wave-juegos {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
 
 /*/////Colecciones y juegos /////*/
 .main--colection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px; }
+  margin: 60px 0; }
   .main--colection h2 {
     text-align: left;
     font-size: 3.5rem;
-    font-weight: 900;
-    margin-bottom: 40px;
+    font-family: 'Sigmar One';
+    margin: 20px 0;
     text-decoration: underline; }
+  .main--colection .main--colection__first {
+    margin-top: 100px; }
   .main--colection .colection_container {
     display: flex;
     width: 100%;
@@ -46,7 +75,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #185ADB;
+      background-color: #456990;
       border-radius: 10px;
       width: 220px;
       height: 250px;
@@ -62,8 +91,8 @@ body {
         width: 80px;
         height: 35px;
         border-radius: 8px;
-        background-color: #FFC947;
-        color: #000000;
+        background-color: #CEFF1A;
+        color: #000022;
         font-size: 1.6rem;
         font-weight: 700; }
       .main--colection .colection_container .colection--item .item--img {
@@ -106,7 +135,7 @@ body {
   flex-direction: column; }
   .contact__container-form .input {
     background-color: transparent;
-    border-bottom: 2px solid #EFEFEF;
+    border-bottom: 2px solid #FBF5F3;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -117,9 +146,9 @@ body {
     outline: none;
     padding: 0 20px; }
   .contact__container-form .input::placeholder {
-    color: #EFEFEF; }
+    color: #FBF5F3; }
   .contact__container-form .textarea {
-    border: 2px solid #EFEFEF;
+    border: 2px solid #FBF5F3;
     border-radius: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -128,7 +157,7 @@ body {
     padding: 20px;
     background: transparent; }
   .contact__container-form .textarea::placeholder {
-    color: #EFEFEF;
+    color: #FBF5F3;
     font-size: 1.6rem; }
   .contact__container-form .boton {
     background-color: rgba(255, 255, 255, 0.3);
@@ -148,6 +177,7 @@ body {
   margin-top: 80px; }
   #aboutUs h2 {
     font-size: 3.5rem;
+    font-weight: 900;
     margin-bottom: 40px;
     text-decoration: underline;
     text-align: center; }
@@ -156,6 +186,7 @@ body {
   min-height: 320px; }
   .aboutUs-text p {
     font-size: 1.6rem;
+    font-weight: 400;
     padding: 5px;
     margin: 0 40px; }
 
@@ -171,11 +202,13 @@ body {
 #footer {
   display: flex;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 140px;
   justify-content: space-between; }
 
 .socialMedia-item {
   padding-left: 10px; }
+  .socialMedia-item img {
+    width: 25px; }
 
 .footer__info {
   margin-right: 10px;
@@ -196,6 +229,8 @@ body {
     height: 316px; } }
 
 @media only screen and (min-width: 750px) {
+  .carousel__container #carouselExampleCaptions {
+    width: 70%; }
   .main--cover {
     height: 400px; }
     .main--cover .cover_container {
@@ -216,7 +251,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #185ADB;
+        background-color: #456990;
         border-radius: 10px;
         width: 270px;
         height: 273px;
@@ -224,7 +259,7 @@ body {
         cursor: pointer; }
       .main--colection .colection_container .colection--item:hover {
         transform: scale(1.1);
-        transition: 1s; }
+        transition: .5s; }
   .juegos__colectionContainer {
     justify-content: center; }
   .contact {
@@ -245,35 +280,30 @@ body {
       gap: 10px;
       grid-template-areas: "img1 img1" "img2 img3" "img4 img4"; }
       #aboutUs .aboutUs__imagenes .img1 {
-        background-color: red;
         grid-area: img1; }
         #aboutUs .aboutUs__imagenes .img1 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
       #aboutUs .aboutUs__imagenes .img2 {
-        background-color: red;
         grid-area: img2; }
         #aboutUs .aboutUs__imagenes .img2 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
       #aboutUs .aboutUs__imagenes .img3 {
-        background-color: red;
         grid-area: img3; }
         #aboutUs .aboutUs__imagenes .img3 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
       #aboutUs .aboutUs__imagenes .img4 {
-        background-color: red;
         grid-area: img4; }
         #aboutUs .aboutUs__imagenes .img4 img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
       #aboutUs .aboutUs__imagenes .img5 {
-        background-color: red;
         grid-area: img5; } }
 
 @media only screen and (min-width: 1250px) {

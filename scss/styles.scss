@@ -4,15 +4,26 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, 'Sigmar One', cursive;
   font-size: 10px;
   color: $white;
   box-sizing: border-box;
 }
 
 body {
-  background-color: $background;
-  box-sizing: border-box;
+  background-color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: $black;
+
+  .navbar-nav .nav-link {
+    color: $white;
+  }
 }
 
 .logo--img {
@@ -24,22 +35,50 @@ body {
   font-size: 1.6rem;
 }
 
-#carouselExampleCaptions {
-  margin-bottom: 80px;
+.carousel__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46px;
+
+  #carouselExampleCaptions {
+    width: 90%;
+  }
+}
+
+.wave {
+  position: absolute;
+  top: -190px;
+  height: 305vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.wave-juegos {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 /*/////Colecciones y juegos /////*/
 
 .main--colection {
   @include flexColumn;
-  margin-bottom: 60px;
+  margin: 60px 0;
 
   h2 {
     text-align: left;
     font-size: 3.5rem;
-    font-weight: 900;
-    margin-bottom: 40px;
+    font-family: 'Sigmar One';
+    margin: 20px 0;
     text-decoration: underline;
+  }
+
+  .main--colection__first {
+    margin-top: 100px;
   }
 
   .colection_container {
@@ -54,7 +93,7 @@ body {
       position: relative;
       scroll-snap-align: center;
       @include flexColumn;
-      background-color: $violeta;
+      background-color: $grey;
       border-radius: 10px;
       width: 220px;
       height: 250px;
@@ -180,6 +219,7 @@ body {
 
   h2 {
     font-size: 3.5rem;
+    font-weight: 900;
     margin-bottom: 40px;
     text-decoration: underline;
     text-align: center;
@@ -191,6 +231,7 @@ body {
 
   p {
     font-size: 1.6rem;
+    font-weight: 400;
     padding: 5px;
     margin: 0 40px;
   }
@@ -212,12 +253,16 @@ body {
 #footer {
   display: flex;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 140px;
   justify-content: space-between;
 }
 
 .socialMedia-item {
   padding-left: 10px;
+
+  img {
+    width: 25px;
+  }  
 }
 
 .footer__info {
@@ -245,6 +290,13 @@ body {
 }
 
 @media only screen and (min-width: 750px) {
+
+  .carousel__container{
+    #carouselExampleCaptions {
+      width: 70%;
+    }
+  }
+  
 
   .main--cover {
     height: 400px;
@@ -275,7 +327,7 @@ body {
       
       .colection--item {
         @include flexColumn;
-        background-color: $violeta;
+        background-color: $grey;
         border-radius: 10px;
         width: 270px;
         height: 273px;
@@ -285,7 +337,7 @@ body {
 
       .colection--item:hover {
         transform: scale(1.1);
-        transition: 1s;
+        transition: .5s;
       }
     }
   }
@@ -320,7 +372,6 @@ body {
                            "img4 img4";
       
       .img1{
-        background-color: red;
         grid-area: img1;
         
         img {
@@ -330,7 +381,6 @@ body {
         }
       }
       .img2{
-        background-color: red;
         grid-area: img2;
 
         img {
@@ -340,7 +390,6 @@ body {
         }
       }
       .img3{
-        background-color: red;
         grid-area: img3;
 
         img {
@@ -350,7 +399,6 @@ body {
         }
       }
       .img4{
-        background-color: red;
         grid-area: img4;
 
         img {
@@ -360,7 +408,6 @@ body {
         }
       }
       .img5{
-        background-color: red;
         grid-area: img5;
       }
     }
