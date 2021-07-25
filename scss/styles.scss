@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: $black;
+  background-color: $background;
 }
 
 a {
@@ -19,7 +19,9 @@ a {
 }
 
 .navbar {
-  background-color: $black;
+  background-color: $fieldDrab;
+  -webkit-box-shadow: 0px 10px 19px 1px rgba(0,0,0,0.21); 
+  box-shadow: 0px 10px 19px 1px rgba(0,0,0,0.21);
 
   .navbar-nav .nav-link {
     color: $white;
@@ -44,13 +46,38 @@ a {
 
   #carouselExampleCaptions {
     width: 90%;
+
+    .carousel {
+      border-radius: 10px;
+    }
   }
+}
+
+.containerMain {
+  position: relative;
+  width: 100%;
+}
+
+.containerMainJuegos {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
 }
 
 .wave {
   position: absolute;
-  top: -190px;
-  height: 305vh;
+  top: 50%;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+.wave2 {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  height: 500px;
   width: 100%;
   z-index: -1;
 }
@@ -93,13 +120,15 @@ a {
       position: relative;
       scroll-snap-align: center;
       @include flexColumn;
-      background-color: $grey;
+      background-color: $ebony;
       border-radius: 10px;
       width: 220px;
       height: 250px;
       min-width: 220px;
-      max-width: 300px;
+      max-width: 200px;
       margin: 0 15px;
+      -webkit-box-shadow: 4px 10px 12px -1px rgba(0,0,0,0.44); 
+      box-shadow: 4px 10px 12px -1px rgba(0,0,0,0.44);
 
       span {
         @include flexCenter;
@@ -108,8 +137,8 @@ a {
         width: 80px;
         height: 35px;
         border-radius: 8px;
-        background-color: $yellow;
-        color: $black;
+        background-color: $yellowish;
+        color: $background;
         font-size: 1.6rem;
         font-weight: 700;
       }
@@ -253,7 +282,7 @@ a {
 #footer {
   display: flex;
   align-items: center;
-  margin-top: 350px;
+  margin-top: 200px;
   justify-content: space-between;
 }
 
@@ -319,7 +348,7 @@ a {
   }
 
   .main--colection {
-    overflow-x: hidden;
+    overflow-x: hidden;    
 
     .colection_container {
       overflow-x: hidden;
@@ -327,7 +356,7 @@ a {
       
       .colection--item {
         @include flexColumn;
-        background-color: $grey;
+        background-color: $ebony;
         border-radius: 10px;
         width: 270px;
         height: 273px;
@@ -339,6 +368,12 @@ a {
         transform: scale(1.1);
         transition: .5s;
       }
+    }
+
+    .colection_container-wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 800px;
     }
   }
   
@@ -418,5 +453,11 @@ a {
   
   .colection_container {
     justify-content: center;
-  } 
+  }
+  
+  .main--colection{
+    .colection_container-wrap {
+      height: 400px;
+    }
+  }  
 }

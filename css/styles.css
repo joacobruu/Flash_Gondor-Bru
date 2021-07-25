@@ -4,19 +4,21 @@
   padding: 0;
   font-family: 'Roboto', sans-serif, 'Sigmar One', cursive;
   font-size: 10px;
-  color: #FBF5F3;
+  color: #E0E2DB;
   box-sizing: border-box; }
 
 body {
-  background-color: #000022; }
+  background-color: #400406; }
 
 a {
   text-decoration: none; }
 
 .navbar {
-  background-color: #000022; }
+  background-color: #755C1B;
+  -webkit-box-shadow: 0px 10px 19px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 10px 19px 1px rgba(0, 0, 0, 0.21); }
   .navbar .navbar-nav .nav-link {
-    color: #FBF5F3; }
+    color: #E0E2DB; }
 
 .logo--img {
   width: 100px;
@@ -33,11 +35,31 @@ a {
   margin-top: 46px; }
   .carousel__container #carouselExampleCaptions {
     width: 90%; }
+    .carousel__container #carouselExampleCaptions .carousel {
+      border-radius: 10px; }
+
+.containerMain {
+  position: relative;
+  width: 100%; }
+
+.containerMainJuegos {
+  position: relative;
+  width: 100%;
+  margin-top: 200px; }
 
 .wave {
   position: absolute;
-  top: -190px;
-  height: 305vh;
+  top: 50%;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1; }
+
+.wave2 {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  height: 500px;
   width: 100%;
   z-index: -1; }
 
@@ -75,13 +97,15 @@ a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #456990;
+      background-color: #515A47;
       border-radius: 10px;
       width: 220px;
       height: 250px;
       min-width: 220px;
-      max-width: 300px;
-      margin: 0 15px; }
+      max-width: 200px;
+      margin: 0 15px;
+      -webkit-box-shadow: 4px 10px 12px -1px rgba(0, 0, 0, 0.44);
+      box-shadow: 4px 10px 12px -1px rgba(0, 0, 0, 0.44); }
       .main--colection .colection_container .colection--item span {
         display: flex;
         align-items: center;
@@ -91,8 +115,8 @@ a {
         width: 80px;
         height: 35px;
         border-radius: 8px;
-        background-color: #CEFF1A;
-        color: #000022;
+        background-color: #D7BE82;
+        color: #400406;
         font-size: 1.6rem;
         font-weight: 700; }
       .main--colection .colection_container .colection--item .item--img {
@@ -135,7 +159,7 @@ a {
   flex-direction: column; }
   .contact__container-form .input {
     background-color: transparent;
-    border-bottom: 2px solid #FBF5F3;
+    border-bottom: 2px solid #E0E2DB;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -146,9 +170,9 @@ a {
     outline: none;
     padding: 0 20px; }
   .contact__container-form .input::placeholder {
-    color: #FBF5F3; }
+    color: #E0E2DB; }
   .contact__container-form .textarea {
-    border: 2px solid #FBF5F3;
+    border: 2px solid #E0E2DB;
     border-radius: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -157,7 +181,7 @@ a {
     padding: 20px;
     background: transparent; }
   .contact__container-form .textarea::placeholder {
-    color: #FBF5F3;
+    color: #E0E2DB;
     font-size: 1.6rem; }
   .contact__container-form .boton {
     background-color: rgba(255, 255, 255, 0.3);
@@ -202,7 +226,7 @@ a {
 #footer {
   display: flex;
   align-items: center;
-  margin-top: 350px;
+  margin-top: 200px;
   justify-content: space-between; }
 
 .socialMedia-item {
@@ -251,7 +275,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #456990;
+        background-color: #515A47;
         border-radius: 10px;
         width: 270px;
         height: 273px;
@@ -260,6 +284,10 @@ a {
       .main--colection .colection_container .colection--item:hover {
         transform: scale(1.1);
         transition: .5s; }
+    .main--colection .colection_container-wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 800px; }
   .juegos__colectionContainer {
     justify-content: center; }
   .contact {
@@ -308,4 +336,6 @@ a {
 
 @media only screen and (min-width: 1250px) {
   .colection_container {
-    justify-content: center; } }
+    justify-content: center; }
+  .main--colection .colection_container-wrap {
+    height: 400px; } }
