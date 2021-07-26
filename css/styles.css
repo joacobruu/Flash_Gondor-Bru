@@ -63,27 +63,20 @@ a {
   width: 100%;
   z-index: -1; }
 
-.wave-juegos {
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: -1; }
-
 /*/////Colecciones y juegos /////*/
 .main--colection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 60px 0; }
+  margin: 6rem 0; }
   .main--colection h2 {
     text-align: left;
     font-size: 3.5rem;
     font-family: 'Sigmar One';
-    margin: 20px 0;
+    margin: 2rem 0;
     text-decoration: underline; }
   .main--colection .main--colection__first {
-    margin-top: 100px; }
+    margin-top: 10rem; }
   .main--colection .colection_container {
     display: flex;
     width: 100%;
@@ -131,7 +124,7 @@ a {
       .main--colection .colection_container .colection--item p {
         font-size: 1.4rem;
         text-align: center;
-        font-weight: 700;
+        font-weight: 400;
         margin: 30px 0; }
 
 /*/////Contacto/////*/
@@ -163,7 +156,6 @@ a {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.6rem;
     height: 50px;
     margin-bottom: 20px;
@@ -176,9 +168,9 @@ a {
     border-radius: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
     outline: none;
     padding: 20px;
+    font-size: 1.6rem;
     background: transparent; }
   .contact__container-form .textarea::placeholder {
     color: #E0E2DB;
@@ -191,7 +183,6 @@ a {
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: bold;
-    font-family: 'Muli', sans-serif;
     height: 50px;
     letter-spacing: 1px;
     margin: 10px 0px; }
